@@ -7,10 +7,14 @@
                 <a-scene embedded vr-mode-ui="enabled: false" arjs="sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;">
         <!--<a-marker preset="hiro"> -->
             	<!-- <a-marker-camera type='barcode' value='4'></a-marker-camera> -->
-
+        <a-assets>
+        <img id="transpImage" src="https://github.com/troin1/troin1.github.io/blob/main/Maulschluessel.jpg">
+        </a-assets>
+                    
             <a-marker type='barcode' value='3'>
             <a-box position='0 0.5 0' color="yellow"></a-box>
-        </a-marker>
+            <a-image id="test" src="https://github.com/troin1/troin1.github.io/blob/main/Maulschluessel.jpg" position="0 0 0" rotation="-90 0 0" width="" height="" opacity="1" transparent="true" alpha-test="0.2" shader="standard" scale="1 1 1" visible="" material="" geometry=""></a-image>
+            </a-marker>
             
             <!-- we use cors proxy to avoid cross-origin problems ATTENTION! you need to set up your server 
                               <a-box position="0 0.5 0" rotation="0 45 0" color="#4CC3D9"></a-box>
