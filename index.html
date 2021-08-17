@@ -24,10 +24,10 @@
             position="0 -1 0"
             scale="1.05 1.05 1.05"
             gltf-model="url(https://raw.githubusercontent.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-playground/models/CesiumMan.gltf)" 
-            ></a-entity> -->
+            ></a-entity>   material="opacity: 0.7" --> 
             <a-marker type='barcode' value='4'>
-            <a-plane rotation="-90 0 0" position="0 0 0" material="opacity: 0.7" color="white"></a-plane>
-            <a-text text="value: Augmented Reality \n Demo!" color="blue"  primitive="plane"  position="0 0 1" rotation="-90 0 0" width="5" wrap-count="15" ></a-text>
+            <a-plane rotation="-90 0 0" position="0 0 0" material="src:#ground" color="white"></a-plane>
+            <a-text text="value: Augmented Reality \n Demo!" color="blue"  primitive="plane"  position="-3 0 1" rotation="-90 0 0" width="5" wrap-count="15" ></a-text>
            
         </a-marker>
         <a-entity camera></a-entity>
